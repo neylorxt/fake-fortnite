@@ -7,6 +7,8 @@ A modern **landing page** visually inspired by the Fortnite universe, built as a
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?style=flat-square&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-06b6d4?style=flat-square&logo=tailwindcss)
 
+![FakeFortnite landing page preview](public/images/preview/preview.png)
+
 ---
 
 ## ✨ Features
