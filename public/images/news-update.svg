@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d2333"/>
+      <stop offset="50%" stop-color="#161a29"/>
+      <stop offset="100%" stop-color="#0b0c12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#6d4cff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#6d4cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="400" cy="200" r="260" fill="url(#glow)"/>
+
+  <!-- Flèches de mise à jour -->
+  <g transform="translate(400 210)">
+    <path d="M0 40 A55 55 0 0 1 95 10" stroke="#f5c04a" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M80 -16 L112 22 L74 30 Z" fill="#f5c04a"/>
+    <path d="M0 -40 A55 55 0 0 1 -95 -10" stroke="#6d4cff" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M-80 16 L-112 -22 L-74 -30 Z" fill="#6d4cff"/>
+    <circle cx="0" cy="0" r="48" fill="#1a1830" stroke="#3a3755" stroke-width="4"/>
+    <text x="0" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="34" fill="#ffffff">↻</text>
+  </g>
+
+  <!-- Barres de progression -->
+  <g>
+    <rect x="200" y="340" width="400" height="18" rx="9" fill="#1a1830" stroke="#3a3755" stroke-width="2"/>
+    <rect x="204" y="344" width="240" height="10" rx="5" fill="#6d4cff"/>
+    <rect x="204" y="344" width="120" height="10" rx="5" fill="#f5c04a" opacity="0.9"/>
+  </g>
+
+  <!-- Particules -->
+  <circle cx="260" cy="160" r="3" fill="#f5c04a" opacity="0.8"/>
+  <circle cx="540" cy="140" r="2.5" fill="#6d4cff" opacity="0.8"/>
+  <circle cx="620" cy="260" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="180" cy="280" r="2.5" fill="#ffffff" opacity="0.5"/>
+</svg>

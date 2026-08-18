@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#241a3d"/>
+      <stop offset="55%" stop-color="#181231"/>
+      <stop offset="100%" stop-color="#0b0a12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#6d4cff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6d4cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="400" cy="200" r="300" fill="url(#glow)"/>
+
+  <!-- Piste de danse -->
+  <rect x="200" y="250" width="400" height="130" rx="12" fill="#1a1430" stroke="#6d4cff" stroke-opacity="0.5"/>
+  <g fill="none" stroke="#6d4cff" stroke-width="2" opacity="0.6">
+    <circle cx="400" cy="315" r="30"/>
+    <circle cx="400" cy="315" r="55"/>
+    <circle cx="400" cy="315" r="80"/>
+  </g>
+
+  <!-- Confettis -->
+  <g>
+    <rect x="260" y="270" width="8" height="8" rx="2" fill="#f5c04a" transform="rotate(20 264 274)"/>
+    <rect x="480" y="260" width="8" height="8" rx="2" fill="#315cff" transform="rotate(-15 484 264)"/>
+    <rect x="540" y="290" width="7" height="7" rx="2" fill="#3ec9a7" transform="rotate(40 543 293)"/>
+    <rect x="300" y="300" width="7" height="7" rx="2" fill="#f0656a" transform="rotate(-30 303 303)"/>
+    <rect x="420" y="280" width="8" height="8" rx="2" fill="#6d4cff" transform="rotate(10 424 284)"/>
+  </g>
+
+  <!-- Boule disco -->
+  <circle cx="400" cy="180" r="36" fill="#3a3550"/>
+  <g fill="#ffffff" opacity="0.9">
+    <rect x="386" y="162" width="7" height="7" rx="2"/>
+    <rect x="400" y="176" width="7" height="7" rx="2"/>
+    <rect x="386" y="190" width="7" height="7" rx="2"/>
+    <rect x="414" y="168" width="7" height="7" rx="2"/>
+    <rect x="400" y="162" width="7" height="7" rx="2"/>
+    <rect x="414" y="184" width="7" height="7" rx="2"/>
+  </g>
+  <line x1="400" y1="120" x2="400" y2="144" stroke="#3a3550" stroke-width="4"/>
+
+  <!-- Rayons lumineux -->
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.5">
+    <line x1="400" y1="216" x2="400" y2="250"/>
+    <line x1="340" y1="200" x2="300" y2="260"/>
+    <line x1="460" y1="200" x2="500" y2="260"/>
+    <line x1="330" y1="180" x2="280" y2="220"/>
+    <line x1="470" y1="180" x2="520" y2="220"/>
+  </g>
+
+  <!-- Fêtards -->
+  <g transform="translate(330 340)">
+    <circle cx="0" cy="-14" r="11" fill="#f5c04a"/>
+    <rect x="-12" y="-2" width="24" height="22" rx="8" fill="#6d4cff"/>
+    <path d="M-18 -6 q-12 -2 -14 6 q8 6 14 2 Z" fill="#3ec9a7"/>
+  </g>
+  <g transform="translate(470 340)">
+    <circle cx="0" cy="-14" r="11" fill="#315cff"/>
+    <rect x="-12" y="-2" width="24" height="22" rx="8" fill="#f0656a"/>
+    <path d="M18 -6 q12 -2 14 6 q-8 6 -14 2 Z" fill="#f5c04a"/>
+  </g>
+
+  <circle cx="200" cy="140" r="3" fill="#f5c04a" opacity="0.7"/>
+  <circle cx="600" cy="130" r="2.5" fill="#6d4cff" opacity="0.8"/>
+  <circle cx="640" cy="200" r="2" fill="#ffffff" opacity="0.6"/>
+</svg>

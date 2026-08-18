@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#232236"/>
+      <stop offset="55%" stop-color="#191829"/>
+      <stop offset="100%" stop-color="#0b0b12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#315cff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#315cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a3755"/>
+      <stop offset="100%" stop-color="#242140"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="500" cy="180" r="280" fill="url(#glow)"/>
+
+  <!-- Ligne d'horizon -->
+  <path d="M0 300 Q400 270 800 290 L800 450 L0 450 Z" fill="#1a1828"/>
+
+  <!-- Gratte-ciels -->
+  <rect x="60" y="150" width="55" height="150" fill="url(#tower)"/>
+  <rect x="130" y="110" width="45" height="190" fill="#2e2b4a"/>
+  <rect x="560" y="140" width="60" height="160" fill="url(#tower)"/>
+  <rect x="640" y="100" width="48" height="200" fill="#2e2b4a"/>
+  <rect x="200" y="180" width="38" height="120" fill="#262340"/>
+  <rect x="500" y="180" width="42" height="120" fill="#262340"/>
+
+  <!-- Fenêtres éclairées -->
+  <g fill="#f5c04a" opacity="0.85">
+    <rect x="75" y="170" width="8" height="12" rx="2"/>
+    <rect x="75" y="200" width="8" height="12" rx="2"/>
+    <rect x="95" y="185" width="8" height="12" rx="2"/>
+    <rect x="145" y="130" width="7" height="11" rx="2"/>
+    <rect x="145" y="160" width="7" height="11" rx="2"/>
+    <rect x="160" y="145" width="7" height="11" rx="2"/>
+    <rect x="575" y="160" width="9" height="13" rx="2"/>
+    <rect x="595" y="185" width="9" height="13" rx="2"/>
+    <rect x="575" y="220" width="9" height="13" rx="2"/>
+    <rect x="655" y="120" width="7" height="11" rx="2"/>
+    <rect x="655" y="150" width="7" height="11" rx="2"/>
+    <rect x="670" y="135" width="7" height="11" rx="2"/>
+  </g>
+
+  <!-- Lumières de la ville -->
+  <g fill="#315cff" opacity="0.8">
+    <rect x="90" y="230" width="6" height="10" rx="2"/>
+    <rect x="110" y="250" width="6" height="10" rx="2"/>
+    <rect x="215" y="200" width="5" height="9" rx="2"/>
+    <rect x="215" y="225" width="5" height="9" rx="2"/>
+  </g>
+
+  <!-- Voitures -->
+  <g>
+    <rect x="120" y="330" width="34" height="14" rx="4" fill="#6d4cff"/>
+    <circle cx="130" cy="346" r="6" fill="#0c0c14"/>
+    <circle cx="146" cy="346" r="6" fill="#0c0c14"/>
+    <rect x="360" y="320" width="30" height="12" rx="4" fill="#f5c04a" opacity="0.9"/>
+    <circle cx="369" cy="334" r="5.5" fill="#0c0c14"/>
+    <circle cx="383" cy="334" r="5.5" fill="#0c0c14"/>
+  </g>
+
+  <!-- Soleil couchant -->
+  <circle cx="400" cy="240" r="60" fill="#f5c04a" opacity="0.5"/>
+  <circle cx="400" cy="240" r="40" fill="#ffe9a0" opacity="0.6"/>
+
+  <circle cx="280" cy="100" r="3" fill="#ffffff" opacity="0.5"/>
+  <circle cx="720" cy="160" r="2.5" fill="#ffffff" opacity="0.4"/>
+</svg>

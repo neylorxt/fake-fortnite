@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1b2e"/>
+      <stop offset="55%" stop-color="#151425"/>
+      <stop offset="100%" stop-color="#0b0b12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#315cff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#315cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c2a44"/>
+      <stop offset="100%" stop-color="#14131f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="400" cy="180" r="260" fill="url(#glow)"/>
+
+  <!-- Sol -->
+  <path d="M0 280 Q400 240 800 260 L800 450 L0 450 Z" fill="#1a1828"/>
+
+  <!-- Route en perspective -->
+  <path d="M330 450 L360 270 L440 270 L470 450 Z" fill="url(#road)"/>
+  <path d="M0 430 L800 410 L800 450 L0 450 Z" fill="#11101b"/>
+
+  <!-- Lignes de voie -->
+  <g stroke="#6d4cff" stroke-width="4" opacity="0.8">
+    <line x1="372" y1="450" x2="392" y2="278"/>
+    <line x1="428" y1="450" x2="408" y2="278"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="2.5" opacity="0.5">
+    <line x1="400" y1="450" x2="400" y2="300"/>
+  </g>
+
+  <!-- Traces de vitesse -->
+  <g stroke="#ffffff" stroke-linecap="round" opacity="0.3">
+    <line x1="240" y1="420" x2="240" y2="370"/>
+    <line x1="210" y1="430" x2="210" y2="390"/>
+    <line x1="560" y1="410" x2="560" y2="360"/>
+    <line x1="590" y1="420" x2="590" y2="380"/>
+  </g>
+
+  <!-- Voiture -->
+  <g transform="translate(400 340)">
+    <path d="M-38 -14 Q-32 -30 -6 -32 L6 -32 Q28 -30 36 -14 L44 8 L-44 8 Z" fill="#f5c04a"/>
+    <path d="M-26 -16 Q-22 -26 0 -27 L10 -27 Q30 -26 34 -14 Z" fill="#6d4cff"/>
+    <rect x="-44" y="8" width="88" height="16" rx="5" fill="#2b2a44"/>
+    <circle cx="-22" cy="26" r="11" fill="#14131f"/>
+    <circle cx="-22" cy="26" r="5" fill="#ffffff" opacity="0.85"/>
+    <circle cx="22" cy="26" r="11" fill="#14131f"/>
+    <circle cx="22" cy="26" r="5" fill="#ffffff" opacity="0.85"/>
+    <path d="M-44 8 L-50 8 L-50 -2 L-38 -8 Z" fill="#f5c04a"/>
+  </g>
+
+  <!-- Montagnes -->
+  <path d="M120 300 L220 180 L320 300 Z" fill="#262440"/>
+  <path d="M640 300 L740 170 L840 300 Z" fill="#201e38"/>
+  <path d="M520 300 L600 200 L680 300 Z" fill="#242240"/>
+</svg>

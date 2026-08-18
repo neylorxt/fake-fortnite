@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1e2c"/>
+      <stop offset="55%" stop-color="#1c1624"/>
+      <stop offset="100%" stop-color="#0b0b12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f0656a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f0656a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="platform" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a3548"/>
+      <stop offset="100%" stop-color="#221f31"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="400" cy="160" r="280" fill="url(#glow)"/>
+
+  <!-- Plateformes en escalier -->
+  <rect x="80" y="280" width="640" height="22" rx="4" fill="url(#platform)"/>
+  <rect x="150" y="240" width="500" height="22" rx="4" fill="url(#platform)"/>
+  <rect x="220" y="200" width="360" height="22" rx="4" fill="url(#platform)"/>
+  <rect x="300" y="160" width="200" height="22" rx="4" fill="url(#platform)"/>
+
+  <!-- Drapeaux d'arrivée -->
+  <g>
+    <line x1="400" y1="160" x2="400" y2="90" stroke="#2c2940" stroke-width="4"/>
+    <path d="M400 90 L455 105 L400 120 Z" fill="#f0656a"/>
+    <path d="M400 120 L455 135 L400 150 Z" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- Pics -->
+  <g fill="#f0656a">
+    <path d="M150 240 L170 210 L190 240 Z"/>
+    <path d="M390 200 L410 170 L430 200 Z"/>
+    <path d="M560 240 L580 210 L600 240 Z"/>
+  </g>
+
+  <!-- Obstacles tournants -->
+  <g transform="translate(300 200)">
+    <rect x="-40" y="-6" width="80" height="12" rx="3" fill="#6d4cff"/>
+  </g>
+  <g transform="translate(500 240)">
+    <rect x="-40" y="-6" width="80" height="12" rx="3" fill="#315cff"/>
+  </g>
+
+  <!-- Lave -->
+  <rect x="0" y="302" width="800" height="148" fill="#1a1118"/>
+  <path d="M0 330 Q100 310 200 330 T400 330 T600 330 T800 330 L800 450 L0 450 Z" fill="#f0656a" opacity="0.4"/>
+  <path d="M0 360 Q120 345 240 360 T480 360 T720 360 T800 355 L800 450 L0 450 Z" fill="#f5c04a" opacity="0.3"/>
+  <circle cx="200" cy="360" r="4" fill="#f5c04a" opacity="0.7"/>
+  <circle cx="480" cy="375" r="3.5" fill="#f5c04a" opacity="0.6"/>
+  <circle cx="650" cy="350" r="4" fill="#f5c04a" opacity="0.7"/>
+
+  <circle cx="130" cy="120" r="3" fill="#ffffff" opacity="0.5"/>
+  <circle cx="660" cy="110" r="2.5" fill="#ffffff" opacity="0.4"/>
+</svg>

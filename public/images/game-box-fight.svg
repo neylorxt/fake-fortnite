@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#241f30"/>
+      <stop offset="55%" stop-color="#191623"/>
+      <stop offset="100%" stop-color="#0b0b12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f5c04a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f5c04a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3f3a52"/>
+      <stop offset="100%" stop-color="#2a2640"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="400" cy="180" r="300" fill="url(#glow)"/>
+
+  <!-- Sol -->
+  <path d="M0 320 L800 320 L800 450 L0 450 Z" fill="#16131f"/>
+  <g stroke="#2c2940" stroke-width="2">
+    <line x1="120" y1="320" x2="120" y2="450"/>
+    <line x1="260" y1="320" x2="260" y2="450"/>
+    <line x1="400" y1="320" x2="400" y2="450"/>
+    <line x1="540" y1="320" x2="540" y2="450"/>
+    <line x1="680" y1="320" x2="680" y2="450"/>
+  </g>
+
+  <!-- Murs Box Fight -->
+  <rect x="150" y="180" width="120" height="140" fill="url(#box)" stroke="#6d4cff" stroke-opacity="0.4"/>
+  <rect x="530" y="180" width="120" height="140" fill="url(#box)" stroke="#315cff" stroke-opacity="0.4"/>
+  <rect x="330" y="140" width="140" height="180" fill="url(#box)" stroke="#f5c04a" stroke-opacity="0.4"/>
+
+  <!-- Rampes -->
+  <g fill="#2c2940">
+    <path d="M240 320 L300 270 L300 320 Z"/>
+    <path d="M480 320 L540 270 L540 320 Z"/>
+    <path d="M360 140 L330 90 L300 140 Z"/>
+  </g>
+
+  <!-- Flèches directionnelles -->
+  <g fill="#f5c04a" opacity="0.9">
+    <path d="M400 320 l-14 -10 l0 20 Z"/>
+    <path d="M400 320 l14 -10 l0 20 Z"/>
+  </g>
+
+  <!-- Effet de tir -->
+  <g stroke="#f0656a" stroke-width="3" opacity="0.9">
+    <line x1="150" y1="240" x2="100" y2="200"/>
+    <line x1="150" y1="250" x2="90" y2="250"/>
+    <line x1="150" y1="260" x2="100" y2="300"/>
+  </g>
+  <circle cx="90" cy="200" r="6" fill="#f0656a" opacity="0.6"/>
+  <circle cx="80" cy="250" r="8" fill="#f0656a" opacity="0.4"/>
+
+  <circle cx="220" cy="120" r="2.5" fill="#ffffff" opacity="0.5"/>
+  <circle cx="600" cy="110" r="3" fill="#ffffff" opacity="0.5"/>
+</svg>

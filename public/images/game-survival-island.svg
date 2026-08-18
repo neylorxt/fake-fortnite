@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d2e36"/>
+      <stop offset="55%" stop-color="#15232b"/>
+      <stop offset="100%" stop-color="#0a0f12"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffe9a0" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ffe9a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b5d66"/>
+      <stop offset="100%" stop-color="#14212b"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a4a3e"/>
+      <stop offset="100%" stop-color="#1c2a26"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="640" cy="130" r="120" fill="url(#sun)"/>
+  <circle cx="640" cy="130" r="42" fill="#ffe9a0" opacity="0.9"/>
+
+  <!-- Océan -->
+  <rect x="0" y="270" width="800" height="180" fill="url(#ocean)"/>
+  <path d="M0 285 Q100 275 200 285 T400 285 T600 285 T800 285 L800 300 L0 300 Z" fill="#2b5d66" opacity="0.7"/>
+
+  <!-- Île -->
+  <path d="M100 300 Q200 240 400 250 Q560 255 680 300 Q700 320 660 330 Q400 360 140 330 Q90 320 100 300 Z" fill="url(#sand)"/>
+
+  <!-- Arbres -->
+  <g>
+    <path d="M180 260 L210 180 L240 260 Z" fill="#2e5548"/>
+    <rect x="205" y="260" width="10" height="40" fill="#3a4a3e"/>
+    <path d="M340 250 L380 140 L420 250 Z" fill="#386048"/>
+    <rect x="375" y="250" width="10" height="50" fill="#3a4a3e"/>
+    <path d="M540 255 L570 170 L600 255 Z" fill="#2e5548"/>
+    <rect x="565" y="255" width="10" height="45" fill="#3a4a3e"/>
+  </g>
+
+  <!-- Campement -->
+  <path d="M440 270 L480 230 L520 270 Z" fill="#f0656a" opacity="0.85"/>
+  <rect x="440" y="270" width="80" height="20" fill="#2c2940"/>
+
+  <!-- Feu -->
+  <g>
+    <ellipse cx="490" cy="290" rx="16" ry="8" fill="#f0656a" opacity="0.8"/>
+    <path d="M490 276 Q500 290 490 296 Q480 290 490 276 Z" fill="#f5c04a"/>
+  </g>
+
+  <!-- Nuages -->
+  <ellipse cx="200" cy="120" rx="120" ry="24" fill="#ffffff" opacity="0.08"/>
+  <ellipse cx="480" cy="100" rx="140" ry="26" fill="#ffffff" opacity="0.07"/>
+
+  <!-- Oiseaux -->
+  <g stroke="#0c0f12" stroke-width="2.5" fill="none" opacity="0.6">
+    <path d="M300 80 q8 -8 16 0 q8 -8 16 0"/>
+    <path d="M340 100 q6 -6 12 0 q6 -6 12 0"/>
+  </g>
+</svg>

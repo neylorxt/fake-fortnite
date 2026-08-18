@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d1b30"/>
+      <stop offset="55%" stop-color="#151424"/>
+      <stop offset="100%" stop-color="#0b0b12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f5c04a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f5c04a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="block" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a5568"/>
+      <stop offset="100%" stop-color="#2b2840"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="400" cy="180" r="300" fill="url(#glow)"/>
+
+  <!-- Grille au sol -->
+  <g stroke="#3c3952" stroke-width="1.5" opacity="0.7">
+    <path d="M0 360 L800 330"/>
+    <path d="M0 385 L800 355"/>
+    <path d="M0 410 L800 380"/>
+    <path d="M0 435 L800 405"/>
+    <path d="M120 450 L240 360"/>
+    <path d="M320 450 L360 340"/>
+    <path d="M520 450 L480 320"/>
+    <path d="M720 450 L600 300"/>
+  </g>
+  <path d="M0 350 Q400 300 800 330 L800 450 L0 450 Z" fill="#191728"/>
+
+  <!-- Blocs créatifs -->
+  <g transform="translate(140 230)">
+    <rect x="0" y="40" width="70" height="60" rx="6" fill="url(#block)" stroke="#6d4cff" stroke-opacity="0.4"/>
+    <rect x="6" y="46" width="58" height="12" rx="3" fill="#6d4cff" opacity="0.35"/>
+  </g>
+  <g transform="translate(330 180)">
+    <rect x="0" y="60" width="80" height="70" rx="6" fill="url(#block)" stroke="#315cff" stroke-opacity="0.4"/>
+    <rect x="8" y="68" width="64" height="14" rx="3" fill="#315cff" opacity="0.35"/>
+    <rect x="8" y="90" width="48" height="10" rx="3" fill="#315cff" opacity="0.2"/>
+  </g>
+  <g transform="translate(540 250)">
+    <rect x="0" y="30" width="60" height="50" rx="6" fill="url(#block)" stroke="#f5c04a" stroke-opacity="0.4"/>
+    <rect x="6" y="36" width="48" height="10" rx="3" fill="#f5c04a" opacity="0.35"/>
+  </g>
+
+  <!-- Plateforme flottante -->
+  <g transform="translate(560 120)">
+    <rect x="-60" y="-18" width="120" height="18" rx="4" fill="#3c3952"/>
+    <path d="M-45 -18 L-35 -55 L-20 -18 Z" fill="#45425a"/>
+    <path d="M10 -18 L22 -70 L45 -18 Z" fill="#4a4660"/>
+    <path d="M60 -18 L70 -48 L85 -18 Z" fill="#3f3c55"/>
+  </g>
+
+  <!-- Particules -->
+  <circle cx="240" cy="120" r="3" fill="#6d4cff" opacity="0.8"/>
+  <circle cx="460" cy="100" r="2.5" fill="#f5c04a" opacity="0.8"/>
+  <circle cx="620" cy="220" r="2" fill="#315cff" opacity="0.7"/>
+  <circle cx="700" cy="140" r="3.5" fill="#6d4cff" opacity="0.6"/>
+  <circle cx="360" cy="300" r="2.5" fill="#ffffff" opacity="0.4"/>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#232238"/>
+      <stop offset="55%" stop-color="#191829"/>
+      <stop offset="100%" stop-color="#0b0b12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#315cff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#315cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#26243c"/>
+      <stop offset="100%" stop-color="#0c0c14"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="280" fill="url(#glow)"/>
+
+  <!-- Ciel -->
+  <path d="M0 260 Q400 200 800 250 L800 450 L0 450 Z" fill="url(#ground)"/>
+
+  <!-- Collines -->
+  <path d="M-40 320 Q120 240 300 300 Q420 330 560 270 Q680 240 840 290 L840 450 L-40 450 Z" fill="#2b2942"/>
+  <path d="M-40 360 Q160 300 380 350 Q560 380 760 320 Q820 305 840 315 L840 450 L-40 450 Z" fill="#201e35"/>
+
+  <!-- Terrain de combat avec bâtiments -->
+  <g transform="translate(120 200)">
+    <rect x="0" y="60" width="60" height="50" rx="4" fill="#3a3754"/>
+    <rect x="10" y="70" width="40" height="10" fill="#22203a"/>
+    <rect x="70" y="40" width="50" height="70" rx="4" fill="#403d5c"/>
+    <rect x="130" y="65" width="55" height="45" rx="4" fill="#383552"/>
+    <path d="M-20 110 L185 110 L185 124 L-20 124 Z" fill="#111019" opacity="0.5"/>
+  </g>
+
+  <!-- Montagnes lointaines -->
+  <path d="M480 270 L560 170 L640 270 Z" fill="#24223c"/>
+  <path d="M600 270 L690 150 L790 270 Z" fill="#1f1d36"/>
+
+  <!-- Zone bleue -->
+  <circle cx="640" cy="140" r="90" fill="none" stroke="#315cff" stroke-width="3" stroke-dasharray="14 10" opacity="0.7"/>
+  <circle cx="640" cy="140" r="90" fill="#315cff" opacity="0.08"/>
+
+  <!-- Particules -->
+  <circle cx="300" cy="130" r="3" fill="#ffffff" opacity="0.5"/>
+  <circle cx="420" cy="100" r="2.5" fill="#ffffff" opacity="0.4"/>
+  <circle cx="520" cy="160" r="2" fill="#ffffff" opacity="0.35"/>
+</svg>
